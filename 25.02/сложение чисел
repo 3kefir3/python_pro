@@ -1,0 +1,4 @@
+x=input()
+c=input()
+v=input()
+print(int(x)+int(c)+int(v))
