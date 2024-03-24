@@ -1,0 +1,9 @@
+print("срок службы колёс?")
+z =int(input())
+x =int(input())
+c =int(input())
+v =int(input())
+if(z>6)or(x>6)or(c>6)or(v>6):
+    print("убери от греха подальше")
+elif(z<6)and(x<6)and(c<6)and(v<6):
+    print("едем")
