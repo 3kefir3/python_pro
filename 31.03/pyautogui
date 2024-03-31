@@ -1,0 +1,25 @@
+import time
+import pyautogui as pg
+print("1 или 2 ?")
+x=input()
+if(x=="1"):
+    pg.moveTo(1254,9)
+    pg.click()
+    pg.moveTo(130,620)
+    pg.doubleClick()
+    pg.moveTo(190,57)
+    time.sleep(1)
+    pg.click()
+    pg.write('hfpevty kb z?')
+    pg.press('enter')
+if(x=="2"):
+    pg.moveTo(1254,9)
+    pg.click()
+    pg.moveTo(130,620)
+    pg.doubleClick()
+    pg.moveTo(190,57)
+    time.sleep(1)
+    pg.click()
+    pg.write('Ckfdf hj,jnfv!')
+    pg.press('enter')
+    
