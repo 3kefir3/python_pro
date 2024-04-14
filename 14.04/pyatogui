@@ -1,0 +1,5 @@
+import keyboard as k
+while True:
+    if k.is_pressed('ctrl')==True:
+        print("всё!")
+        break
