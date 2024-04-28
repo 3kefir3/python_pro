@@ -1,0 +1,10 @@
+import random
+v=random.randint(1, 100)
+z=int(input())
+while (v!=1):
+    if(z<v):
+        print("меньше")
+    if(z>v):
+        print("больше")
+    if(z==v):
+        print("угадал")
