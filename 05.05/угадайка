@@ -1,0 +1,21 @@
+print("привет,угадай число от 1 до 50")
+import random
+v=random.randint(1, 50)
+b=0
+n=6
+z=int(input())
+while (n!=1):
+    if(z<v):
+        print("больше")
+        z=int(input())
+        b=b+1
+    if(z>v):
+        print("меньше")
+        z=int(input())
+        b=b+1
+    if(z==v):
+        if (b<5):
+            print("ты угадал за",b,"попытки")
+        if(b==5)or(b>5):
+            print("ты угадал за",b,"попыток")
+        n=1
