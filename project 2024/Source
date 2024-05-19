@@ -1,1 +1,52 @@
-
+print("привет,загадай число от 1 до 100")
+print("первое число:")
+t=int(input())
+print("второе число:")
+w=int(input())
+print("угадай число от",t,"до",w,) 
+import random
+v=random.randint(t, w)
+b=0
+n=6
+z=int(input())
+while (n!=1):
+    if(z<v):
+        print("больше")
+        c=0
+        while (True):
+            z=int(input())
+            if (z%1==0):
+                c=c+1
+            if(z>=t):
+                c=c+1
+            if(z<=w):
+                c=c+1
+            if(c==3):
+                break
+            else:
+                c=0
+        b=b+1
+    if(z>v):
+        print("меньше")
+        c=0
+        while (True):
+            z=int(input())
+            if (z%1==0):
+                c=c+1
+            if(z>=t):
+                c=c+1
+            if(z<=w):
+                c=c+1
+            if(c==3):
+                break
+            else:
+                c=0
+        b=b+1
+    if(z==v):
+        if (b<5):
+            print("ты угадал за",b,"попытки")
+            break
+        if(b==5)or(b>5)or(b==0):
+            print("ты угадал за",b,"попыток")
+            n=1
+            break
